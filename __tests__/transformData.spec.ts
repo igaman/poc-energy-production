@@ -73,7 +73,7 @@ describe("transform the data from the api", () => {
     expect(dataForHightChart.value).toEqual({
       chart: {
         type: 'column',
-        width: 800,
+        width: 1024,
       },
       title: { text: `Production d'énergie: ${year}` },
       xAxis: { "categories": [ "hydraulique", "bioenergies", "eolienne", "solaire", "electrique", "gaz", "totale" ] },
