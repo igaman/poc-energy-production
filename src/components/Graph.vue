@@ -17,6 +17,7 @@
       <h2 class="text-xl font-semibold mt-2">Région</h2>
       <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-2">
         <SelectItem
+          data-test="select-item"
           v-for="(code, index) in arrayInsee"
           :key="index"
           v-model="arrayInsee[index]"
@@ -25,6 +26,7 @@
       </div>
       <div class="flex gap-2 max-w-lg mt-4">
         <ButtonItem
+          data-test="add-item"
           @add-region="handleAddRegion"
           :disabled="canAddMoreRegions"
           color="indigo"
@@ -33,6 +35,7 @@
           Ajouter
         </ButtonItem>
         <ButtonItem
+          data-test="remove-item"
           @delete-last-region="handleDeleteLastRegion"
           :disabled="canDeleteRegions"
           color="orange"
