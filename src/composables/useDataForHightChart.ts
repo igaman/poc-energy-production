@@ -30,7 +30,7 @@ export function useDataForHightChart(dataPerYear, year) {
       })
       .filter(item => item !== null);
 
-    let screenSize = typeof window !== 'undefined' ? window.innerWidth : 800;
+    let screenSize = typeof window !== 'undefined' ? window.innerWidth : 1024;
     screenSize = screenSize > 1024 ? 1024 : screenSize;
 
     return {
